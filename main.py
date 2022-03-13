@@ -3,7 +3,11 @@ from pytube import YouTube
 import time
 
 # link = ''
-link = 'http://youtube.com/watch?v=9bZkp7q19f0'
+url = 'http://youtube.com/watch?v=9bZkp7q19f0'
+
+def get_video_info():
+    ptvideo = YouTube(url)
+
 video = YouTube(link)
 title = (video.title)
 
