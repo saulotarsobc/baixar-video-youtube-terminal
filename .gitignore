@@ -1,0 +1,6 @@
+*.ps1
+teste.py
+build
+venv
+*.spec
+__*

@@ -1,15 +1,12 @@
-from pytube import YouTube
-import requests
 import sys
+from pytube import YouTube
+import time
 
 # link = ''
 link = 'http://youtube.com/watch?v=9bZkp7q19f0'
-
 video = YouTube(link)
-
-
 title = (video.title)
 
+print(title)
 
-for i in video.streams.get_by_resolution(144):
-    print(i)
+time.sleep(3)
